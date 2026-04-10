@@ -7,10 +7,10 @@ It processes streaming data from sensors and performs real-time analytics using 
 ---
 
 ## ⚙️ Architecture
+## ⚙️ Architecture
 
-Sensor Data Generator → Kafka → Spark Streaming → Cassandra → Power BI Dashboard
+![Pipeline Architecture](images/pipeline.png)
 
----
 
 ## 🧰 Tech Stack
 
