@@ -101,5 +101,5 @@ SELECT * FROM vitals;
 👨‍💻 Author
 
 Wissal CHEIKH
-Big Data and Information Systems Student
+|| Big Data and Information Systems Student
 
