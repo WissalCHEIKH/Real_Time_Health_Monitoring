@@ -7,7 +7,6 @@ It processes streaming data from sensors and performs real-time analytics using 
 ---
 
 ## ⚙️ Architecture
-## ⚙️ Architecture
 
 ![Pipeline Architecture](images/pipeline.png)
 
