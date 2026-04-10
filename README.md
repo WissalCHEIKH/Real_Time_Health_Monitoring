@@ -51,32 +51,41 @@ docker-compose up -d
 ```
 
 ### Check running containers:
+```
 docker ps
-
+```
 ### Kafka consumer
+```
 docker exec -it kafka kafka-console-consumer --bootstrap-server localhost:9092 --topic health_vitals
-
+```
 ### 2. Activate Python Environment
+```
 .\venv\Scripts\activate
-
+```
 ### 3. Run Sensor Data Generator
+```
 python sensor.py
-
+```
 ### 4. Run Spark Streaming Job
+```
 python spark_streaming.py
-
+```
 ### Cassandra Setup
 ### Access Cassandra Shell
+```
 docker exec -it cassandra cqlsh
-
+```
 ### Create Keyspace
+```
 CREATE KEYSPACE health_monitoring
 WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
-
+```
 ### Use Keyspace
+```
 USE health_monitoring;
-
+```
 ### Create Table
+```
 CREATE TABLE vitals (
     patient_id UUID PRIMARY KEY,
     heart_rate int,
@@ -84,10 +93,11 @@ CREATE TABLE vitals (
     oxygen_level int,
     timestamp timestamp
 );
-
+```
 ### Verify Data
+```
 SELECT * FROM vitals;
-
+```
 👨‍💻 Author
 
 Wissal CHEIKH
